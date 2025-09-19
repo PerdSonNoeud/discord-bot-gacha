@@ -5,6 +5,6 @@ module.exports = {
     .setName('stats')
     .setDescription('Affiche les stats et ton inventaire.'),
   async execute(interaction) {
-    await interaction.reply('test');
+    await interaction.reply('WIP.');
   },
 };
