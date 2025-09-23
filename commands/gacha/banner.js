@@ -21,6 +21,7 @@ module.exports = {
     .setName('banner')
     .setDescription('Affiche les bannières disponibles.'),
   async execute(interaction) {
+    // TODO: Remove this constant value and import banners from another file.
     const nbBanner = 10;
     const pages = [];
     for (let i = 0; i < nbBanner; i++) {
