@@ -30,7 +30,9 @@ for (const folder of commandFolders) {
 // When the client is ready, run this code (only once).
 // The distinction between `client: Client<boolean>` and `readyClient: Client<true>` is important for TypeScript developers.
 // It makes some properties non-nullable.
-client.once(Events.ClientReady, readyClient => {
+client.once(Events.ClientReady, async readyClient => {
+  const app = await client.application.fetch();
+  console.log("App emojis:", app.emojis.cache.map(e => `${e.name} (${e.id})`));
 	console.log(`Ready! Logged in as "${readyClient.user.tag}"`);
 });
 

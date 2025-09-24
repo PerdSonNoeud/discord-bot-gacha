@@ -1,0 +1,404 @@
+[
+  {
+    "id": 1,
+    "code": "inazuma1",
+    "name": "Inazuma Eleven",
+    "characters": [
+      {
+        "id": 1,
+        "name": "Axel Blaze",
+        "rarity": 5,
+        "desc": "Julia... Tu veux bien pardonner à ton grand frère de jouer ? Juste une fois..."
+      },
+      {
+        "id": 2,
+        "name": "Shawn Frost",
+        "rarity": 5,
+        "desc": "Entend ma rage... Blizzard Eternel !"
+      },
+      {
+        "id": 3,
+        "name": "Mark Evans",
+        "rarity": 5,
+        "desc": "Hey ! Jouons au Football !"
+      },
+      {
+        "id": 4,
+        "name": "Nathan Swift",
+        "rarity": 4,
+        "desc": ""
+      },
+      {
+        "id": 5,
+        "name": "Jude Sharp",
+        "rarity": 4,
+        "desc": ""
+      },
+      {
+        "id": 6,
+        "name": "Kevin Dragonfly",
+        "rarity": 4,
+        "desc": ""
+      },
+      {
+        "id": 7,
+        "name": "Eric Eagle",
+        "rarity": 4,
+        "desc": ""
+      },
+      {
+        "id": 8,
+        "name": "Nelly Raimon",
+        "rarity": 4,
+        "desc": ""
+      },
+      {
+        "id": 9,
+        "name": "Darren Lachance",
+        "rarity": 4,
+        "desc": ""
+      },
+      {
+        "id": 10,
+        "name": "Jack Wallside",
+        "rarity": 4,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "code": "mha1",
+    "name": "My Hero Academia",
+    "characters": [
+      {
+        "id": 11,
+        "name": "Izuku Midoriya",
+        "rarity": 5,
+        "desc": "Je deviendrai le héro qui sauve tout le monde !"
+      },
+      {
+        "id": 12,
+        "name": "Katsuki Bakugo",
+        "rarity": 5,
+        "desc": "Je serai pas juste le numéro un... J'aurai la première place, loin devant les autres !"
+      },
+      {
+        "id": 13,
+        "name": "Shoto Todoroki",
+        "rarity": 5,
+        "desc": "J'espère que mon stupide vieux regarde !"
+      },
+      {
+        "id": 14,
+        "name": "Eijiro Kirishima",
+        "rarity": 4,
+        "desc": ""
+      },
+      {
+        "id": 15,
+        "name": "Fumikage Tokoyami",
+        "rarity": 4,
+        "desc": ""
+      },
+      {
+        "id": 16,
+        "name": "Tsuyu Asui",
+        "rarity": 4,
+        "desc": ""
+      },
+      {
+        "id": 17,
+        "name": "Ochaco Uraraka",
+        "rarity": 4,
+        "desc": ""
+      },
+      {
+        "id": 18,
+        "name": "Tenya Ida",
+        "rarity": 4,
+        "desc": ""
+      },
+      {
+        "id": 19,
+        "name": "Denki Kaminari",
+        "rarity": 4,
+        "desc": ""
+      },
+      {
+        "id": 20,
+        "name": "Kyoka Jiro",
+        "rarity": 4,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "code": "overlord",
+    "name": "Overlord",
+    "characters": [
+      {
+        "id": 21,
+        "name": "Ainz Ooal Gown",
+        "rarity": 5,
+        "desc": "Dans le passé, il n'y avait personne qui ne connaissait pas ce nom."
+      },
+      {
+        "id": 22,
+        "name": "Albedo",
+        "rarity": 5,
+        "desc": "Nous vous offrons notre entière fidélité."
+      },
+      {
+        "id": 23,
+        "name": "Gargantua",
+        "rarity": 5,
+        "desc": "Qu'est ce que c'est ? Quelle est cette chose ?"
+      },
+      {
+        "id": 24,
+        "name": "Shaltear Bloodfallen",
+        "rarity": 4,
+        "desc": ""
+      },
+      {
+        "id": 25,
+        "name": "Demiurge",
+        "rarity": 4,
+        "desc": ""
+      },
+      {
+        "id": 26,
+        "name": "Sebas Tian",
+        "rarity": 4,
+        "desc": ""
+      },
+      {
+        "id": 27,
+        "name": "Cocytus",
+        "rarity": 4,
+        "desc": ""
+      },
+      {
+        "id": 28,
+        "name": "Narberal Gamma",
+        "rarity": 4,
+        "desc": ""
+      },
+      {
+        "id": 29,
+        "name": "Entoma Vasilissa Zeta",
+        "rarity": 4,
+        "desc": ""
+      },
+      {
+        "id": 30,
+        "name": "Pandora's Actor",
+        "rarity": 4,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "code": "pmmm",
+    "name": "Madoka Magica",
+    "characters": [
+      {
+        "id": 31,
+        "name": "Madoka Kaname",
+        "rarity": 5,
+        "desc": "Je veux qu'ils sourient jusqu'au bout... Si une règle ou une loi s'y oppose. Je vais la détruire. Je vais la réécrire."
+      },
+      {
+        "id": 32,
+        "name": "Walpurgisnacht",
+        "rarity": 5,
+        "desc": "La Terre ne tourne plus une seule fois. L'histoire ne changera pas. Demain, et après-demain, c'est la nuit de Walpurgis."
+      },
+      {
+        "id": 33,
+        "name": "Homura Akemi",
+        "rarity": 5,
+        "desc": "Plus je répète la boucle, plus nos univers s’éloignent. Mes mots ne t’atteignent même plus."
+      },
+      {
+        "id": 34,
+        "name": "Mami Tomoe",
+        "rarity": 4,
+        "desc": ""
+      },
+      {
+        "id": 35,
+        "name": "Kyubey",
+        "rarity": 4,
+        "desc": ""
+      },
+      {
+        "id": 36,
+        "name": "Sayaka Miki",
+        "rarity": 4,
+        "desc": ""
+      },
+      {
+        "id": 37,
+        "name": "Kyoko Sakura",
+        "rarity": 4,
+        "desc": ""
+      },
+      {
+        "id": 38,
+        "name": "Charlotte",
+        "rarity": 4,
+        "desc": ""
+      },
+      {
+        "id": 39,
+        "name": "Iroha Tamaki",
+        "rarity": 4,
+        "desc": ""
+      },
+      {
+        "id": 40,
+        "name": "Yachiyo Nanami",
+        "rarity": 4,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "code": "mha2",
+    "name": "My Hero Academia",
+    "characters": [
+      {
+        "id": 41,
+        "name": "Endeavor",
+        "rarity": 5,
+        "desc": "J'ai toujours détesté le crédo de cette école... PLUS ULTRA"
+      },
+      {
+        "id": 42,
+        "name": "Hawks",
+        "rarity": 5,
+        "desc": "Je suis derrière vous, Numéro 1 !"
+      },
+      {
+        "id": 43,
+        "name": "All Might",
+        "rarity": 5,
+        "desc": "La cavalerie est là !"
+      },
+      {
+        "id": 44,
+        "name": "Sir Nighteye",
+        "rarity": 4,
+        "desc": ""
+      },
+      {
+        "id": 45,
+        "name": "Fat Gum",
+        "rarity": 4,
+        "desc": ""
+      },
+      {
+        "id": 46,
+        "name": "Present Mic",
+        "rarity": 4,
+        "desc": ""
+      },
+      {
+        "id": 47,
+        "name": "Eraser Head",
+        "rarity": 4,
+        "desc": ""
+      },
+      {
+        "id": 48,
+        "name": "Mount Lady",
+        "rarity": 4,
+        "desc": ""
+      },
+      {
+        "id": 49,
+        "name": "Gran Torino",
+        "rarity": 4,
+        "desc": ""
+      },
+      {
+        "id": 50,
+        "name": "Mirko",
+        "rarity": 4,
+        "desc": ""
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "code": "mha3",
+    "name": "My Villain Academia",
+    "characters": [
+      {
+        "id": 51,
+        "name": "All For One",
+        "rarity": 5,
+        "desc": "Profites-en tant que tu le peux All Might... de cette paix éphémère..."
+      },
+      {
+        "id": 52,
+        "name": "Dabi",
+        "rarity": 5,
+        "desc": "Le passé ne meurt jamais !"
+      },
+      {
+        "id": 53,
+        "name": "Tomura Shigaraki",
+        "rarity": 5,
+        "desc": "Je détruirais tout... moi y compris."
+      },
+      {
+        "id": 54,
+        "name": "Himiko Toga",
+        "rarity": 4,
+        "desc": ""
+      },
+      {
+        "id": 55,
+        "name": "Redestro",
+        "rarity": 4,
+        "desc": ""
+      },
+      {
+        "id": 56,
+        "name": "Kai Chisaki",
+        "rarity": 4,
+        "desc": ""
+      },
+      {
+        "id": 57,
+        "name": "Muscular",
+        "rarity": 4,
+        "desc": ""
+      },
+      {
+        "id": 58,
+        "name": "Stain",
+        "rarity": 4,
+        "desc": ""
+      },
+      {
+        "id": 59,
+        "name": "Gentle Criminal",
+        "rarity": 4,
+        "desc": ""
+      },
+      {
+        "id": 60,
+        "name": "Twice",
+        "rarity": 4,
+        "desc": ""
+      }
+    ]
+  }
+]

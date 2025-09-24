@@ -12,7 +12,6 @@ function setupEmbed(user, client, embed) {
     .setFooter({ text: 'Gacha bot | 2025', iconURL: client.user.displayAvatarURL()})
 }
 
-
 // Function to setup pagination
 async function pagination(interaction, pages) {
   let current = 0;
@@ -20,18 +19,18 @@ async function pagination(interaction, pages) {
   // Buttons
   const prev = new ButtonBuilder()
     .setCustomId('prev')
-    .setLabel('◀️')
+    .setEmoji('◀️')
     .setDisabled(true)
     .setStyle(ButtonStyle.Primary);
 
   const next = new ButtonBuilder()
     .setCustomId('next')
-    .setLabel('▶️')
+    .setEmoji('▶️')
     .setStyle(ButtonStyle.Primary);
 
   const border = new ButtonBuilder()
     .setCustomId('border')
-    .setLabel('⏭️')
+    .setEmoji('⏭️')
     .setStyle(ButtonStyle.Primary);
 
   const row = new ActionRowBuilder().addComponents(prev, next, border);
@@ -68,9 +67,9 @@ async function pagination(interaction, pages) {
     next.setDisabled(current === pages.length - 1);
 
     if (current >= Math.floor(pages.length/2)) {
-      border.setLabel('⏮️');
+      border.setEmoji('⏮️');
     } else {
-      border.setLabel('⏭️');
+      border.setEmoji('⏭️');
     }
 
     await i.update({ embeds: [pages[current]], components: [row] });
