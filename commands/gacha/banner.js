@@ -1,5 +1,6 @@
 const { EmbedBuilder, SlashCommandBuilder } = require('discord.js');
-const { bannerCount, bannerExists, getBannerCode, getBannerName, listBannerCharacters } = require('../../banners/banner.js');
+const { bannerCount, bannerExists, getBannerCode, getBannerImage,
+  getBannerName, listBannerCharacters } = require('../../banners/banner.js');
 const { pagination, setupEmbed } = require('../../config/utility.js');
 
 function bannerEmbed(banner_id, user, client) {
@@ -11,8 +12,9 @@ function bannerEmbed(banner_id, user, client) {
   const embed = new EmbedBuilder()
     .setColor(0xff0000)
     .setTitle(`Bannière \`${getBannerName(banner_id)}\` (${banner_id}/${bannerCount})`)
-    .setDescription(`__Code de la bannière :__ ${getBannerCode(banner_id)}`)
-    .addFields({ name: 'Prix des invocations :', value: prices }, characters);
+    .setDescription(`__Code de la bannière :__ \`${getBannerCode(banner_id)}\``)
+    .addFields({ name: 'Prix des invocations :', value: prices }, characters)
+    .setImage(getBannerImage(banner_id));
   setupEmbed(user, client, embed);
 
   return embed;

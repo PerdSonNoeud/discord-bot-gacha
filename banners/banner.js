@@ -32,6 +32,12 @@ function getBannerCharacters(banner_id) {
   return [];
 }
 
+function getBannerImage(banner_id) {
+  const banner = banners.find(b => b.id === banner_id);
+  if (banner) return banner.url;
+  return "";
+}
+
 function listBannerCharacters(client, banner_id) {
   const characters = getBannerCharacters(banner_id);
   let result = '';
@@ -44,6 +50,6 @@ function listBannerCharacters(client, banner_id) {
 }
 
 module.exports = { 
-  bannerCount, bannerExists, getBannerCharacters,
+  bannerCount, bannerExists, getBannerCharacters, getBannerImage,
   getBannerCode, getBannerName, listBannerCharacters
 };

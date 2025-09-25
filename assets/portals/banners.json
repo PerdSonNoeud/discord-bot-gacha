@@ -3,6 +3,7 @@
     "id": 1,
     "code": "inazuma1",
     "name": "Inazuma Eleven",
+    "url": "https://upload.wikimedia.org/wikipedia/fr/thumb/b/b6/Inazuma_Eleven.webp/460px-Inazuma_Eleven.webp.png",
     "characters": [
       {
         "id": 1,
@@ -70,6 +71,7 @@
     "id": 2,
     "code": "mha1",
     "name": "My Hero Academia",
+    "url": "https://upload.wikimedia.org/wikipedia/fr/0/0e/My_Hero_Academia_logo_fr.png",
     "characters": [
       {
         "id": 11,
@@ -137,6 +139,7 @@
     "id": 3,
     "code": "overlord",
     "name": "Overlord",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Overlord_%28novel_series%29.svg/langfr-1920px-Overlord_%28novel_series%29.svg.png",
     "characters": [
       {
         "id": 21,
@@ -204,6 +207,7 @@
     "id": 4,
     "code": "pmmm",
     "name": "Madoka Magica",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Mahō_Shōjo_Madoka_Magika_%28Logo%29.png/1920px-Mahō_Shōjo_Madoka_Magika_%28Logo%29.png",
     "characters": [
       {
         "id": 31,
@@ -271,6 +275,7 @@
     "id": 5,
     "code": "mha2",
     "name": "My Hero Academia",
+    "url": "https://upload.wikimedia.org/wikipedia/fr/0/0e/My_Hero_Academia_logo_fr.png",
     "characters": [
       {
         "id": 41,
@@ -338,6 +343,7 @@
     "id": 6,
     "code": "mha3",
     "name": "My Villain Academia",
+    "url": "https://cdn.discordapp.com/attachments/694036543685263464/1222767843498790944/gaWZ7L3_480x480.png?ex=66176a4b&is=6604f54b&hm=f9436142d51b2e4c5db804614ebca63cf702654e3d4e399ae4fdd2d4a7294116&",
     "characters": [
       {
         "id": 51,
@@ -400,5 +406,33 @@
         "desc": ""
       }
     ]
+  },
+  {
+    "id": 7,
+    "code": "snk",
+    "name": "Attack on Titan",
+    "url": "https://upload.wikimedia.org/wikipedia/fr/0/07/Shingeki_no_Kyojin_%28anime%29_Logo.png",
+    "characters": []
+  },
+  {
+    "id": 8,
+    "code": "csm",
+    "name": "Chainsaw Man",
+    "url": "https://1000logos.net/wp-content/uploads/2023/10/Chainsaw-Man-Logo.png",
+    "characters": []
+  },
+  {
+    "id": 9,
+    "code": "kny",
+    "name": "Demon Slayer",
+    "url": "https://logo-marque.com/wp-content/uploads/2022/01/Demon-Slayer-Logo.png",
+    "characters": []
+  },
+  {
+    "id": 10,
+    "code": "tg",
+    "name": "Tokyo Ghoul",
+    "url": "https://upload.wikimedia.org/wikipedia/fr/e/ea/Logo_Tokyo_Ghoul_anime.png",
+    "characters": []
   }
 ]
