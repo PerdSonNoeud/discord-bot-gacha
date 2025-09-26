@@ -23,13 +23,22 @@ function bannerEmbed(banner_id, user, client) {
 module.exports = {
   data: new SlashCommandBuilder()
     .setName('banner')
-    .setDescription('Affiche les bannières disponibles.'),
+    .setDescription('Affiche les bannières disponibles.')
+    .addNumberOption(option =>
+      option
+        .setName('banner_id')
+        .setDescription('Numéro de la bannière à afficher')
+        .setRequired(false)
+        .setMinValue(1)
+        .setMaxValue(bannerCount+1)
+    ),
   async execute(interaction) {
     const pages = [];
+    let current = interaction.options.getNumber('banner_id') ?? 1;
     for (let i = 1; i <= bannerCount; i++) {
       pages.push(bannerEmbed(i, interaction.user, interaction.client));
     }
 
-    pagination(interaction, pages);
+    pagination(interaction, pages, current-1);
   },
 };

@@ -13,9 +13,7 @@ function setupEmbed(user, client, embed) {
 }
 
 // Function to setup pagination
-async function pagination(interaction, pages) {
-  let current = 0;
-
+async function pagination(interaction, pages, current) {
   // Buttons
   const prev = new ButtonBuilder()
     .setCustomId('prev')
