@@ -1,4 +1,4 @@
 'use strict';
 
-var dotenv = require('dotenv');
+const dotenv = require('dotenv');
 dotenv.config();
