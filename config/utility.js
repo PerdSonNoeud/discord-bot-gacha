@@ -1,5 +1,10 @@
 const { ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
 
+// Return true if a obj is empty
+function isEmpty(obj) {
+	return Object.keys(obj).length === 0;
+}
+
 // Random integer between min and max (inclusive)
 function getRandomInt(min, max) {
 	return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -86,4 +91,4 @@ async function pagination(interaction, pages, current) {
 	});
 }
 
-module.exports = { getRandomInt, pagination, setupEmbed };
+module.exports = { getRandomInt, isEmpty, pagination, setupEmbed };

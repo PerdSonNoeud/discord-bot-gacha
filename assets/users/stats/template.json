@@ -1,0 +1,28 @@
+{
+  "pity": [
+    40,
+    5
+  ],
+  "bag": {
+    "coins": 0,
+    "gem": 0,
+    "ticket": 1
+  },
+  "board": [
+    [
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null
+    ]
+  ]
+}
