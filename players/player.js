@@ -29,7 +29,6 @@ class Player {
 	//             //
 	// ///////////////
 
-	// TODO: Choose a save file system
 	// TODO: Complete the functions
 
 	createUser() {
