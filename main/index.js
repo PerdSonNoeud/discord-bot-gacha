@@ -2,6 +2,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const { Client, Collection, Events, GatewayIntentBits, MessageFlags } = require('discord.js');
+require('../config/config.js');
 
 // Create a new client instance
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
@@ -31,8 +32,6 @@ for (const folder of commandFolders) {
 // The distinction between `client: Client<boolean>` and `readyClient: Client<true>` is important for TypeScript developers.
 // It makes some properties non-nullable.
 client.once(Events.ClientReady, async readyClient => {
-	const app = await client.application.fetch();
-	console.log('App emojis:', app.emojis.cache.map(e => `${e.name} (${e.id})`));
 	console.log(`Ready! Logged in as "${readyClient.user.tag}"`);
 });
 
