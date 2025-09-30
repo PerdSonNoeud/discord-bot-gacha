@@ -61,7 +61,11 @@ module.exports = {
 		)
 		.addSubcommand(sub => sub
 			.setName('stats')
-			.setDescription('Affiche les statistiques d\'un utilisateur.'),
+			.setDescription('Affiche les statistiques d\'un utilisateur.')
+			.addUserOption(opt => opt
+				.setName('target')
+				.setDescription('Profile à afficher (laisser vide pour afficher le votre).'),
+			),
 		),
 
 	async execute(interaction) {
@@ -69,7 +73,7 @@ module.exports = {
 		let user;
 		if (sub === 'create') {
 			user = interaction.user;
-			if (playerExists) {
+			if (playerExists(user.id)) {
 				console.log(`${user.displayName} already has an account.`);
 				await interaction.reply({ content: 'Tu as déjà un compte.', flags: MessageFlags.Ephemeral });
 				return;
@@ -81,9 +85,18 @@ module.exports = {
 		}
 		else if (sub === 'stats') {
 			user = interaction.options.getUser('target');
-			if (!user) {
-			  user = interaction.user;
+			// If no user were given, set as the one who used the command
+			if (!user) user = interaction.user;
+
+			// Checks if the user we're searching for has an account
+			if (!playerExists(user.id)) {
+				console.log(`${user.displayName} has no account.`);
+				let content = 'Tu n\'as pas encore de compte';
+				if (interaction.options.getUser('target')) content = 'L\'utilisateur que vous cherchez n\'a pas encore de compte.';
+				await interaction.reply({ content: content, flags: MessageFlags.Ephemeral });
+				return;
 			}
+
 			const pages = [];
 			const current = 0;
 
