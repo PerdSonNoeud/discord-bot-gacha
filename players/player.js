@@ -1,9 +1,24 @@
 const { getRandomInt, isEmpty } = require('../config/utility.js');
 const { importStats, saveStats } = require('../config/parser.js');
 
+
+function getPlayer(user) {
+	// Assuming the user already has an account
+	let player = Player.players.find(i => i.discord_id === user.id);
+	if (!player) {
+		// User not loaded
+		player = new Player(user);
+		player.importUser();
+		Player.players.push(player);
+	}
+	return player;
+}
+
+
 class Player {
 	static PITY_5 = 50;
 	static PITY_4 = 10;
+	static players = [];
 
 	constructor(user) {
 		// Discord info
@@ -37,7 +52,7 @@ class Player {
 			return;
 		}
 		saveStats(data, this.discord_id);
-		console.log('Save file created successfully for user : ${this.discord_id}');
+		console.log(`Save file created successfully for ${this}`);
 	}
 
 	importUser() {
@@ -50,7 +65,7 @@ class Player {
 		this.pity = data.pity;
 		this.bag = data.bag;
 
-		console.log('Save file imported successfully for user : ${this.discord_id}');
+		console.log(`Save file imported successfully for ${this}`);
 	}
 
 	updateUser() {
@@ -65,7 +80,7 @@ class Player {
 		};
 		saveStats(data, this.discord_id);
 
-		console.log('Save file updated successfully for user : ${this.discord_id}');
+		console.log(`Save file saved successfully for ${this}`);
 	}
 
 	// //////////////////
@@ -123,9 +138,9 @@ class Player {
 	//             //
 	// ///////////////
 
-	toSstring() {
-		return '${this.discord_name} (${this.discord_id})';
+	toString() {
+		return `${this.discord_name} (${this.discord_id})`;
 	}
 }
 
-module.exports = Player;
+module.exports = { getPlayer, Player };

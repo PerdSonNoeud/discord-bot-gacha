@@ -3,6 +3,10 @@ const fs = require ('node:fs');
 const stats = './assets/users/stats/';
 const inv = './assets/users/inventories/';
 
+function fileExists(filepath) {
+	return fs.existsSync(filepath);
+}
+
 // Function that gets the file given in argument, returns {} if nothing is found.
 function parseFile(filepath) {
 	try {
@@ -54,4 +58,4 @@ function saveInv(data, userID) {
 	});
 }
 
-module.exports = { importInv, importStats, parseBanners, saveInv, saveStats };
+module.exports = { fileExists, importInv, importStats, parseBanners, saveInv, saveStats };

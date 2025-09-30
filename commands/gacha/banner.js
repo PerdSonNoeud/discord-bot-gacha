@@ -10,7 +10,6 @@ function bannerEmbed(banner_id, user, client) {
 		characters.value = listBannerCharacters(client, banner_id);
 	}
 	const embed = new EmbedBuilder()
-		.setColor(0xff0000)
 		.setTitle(`Bannière \`${getBannerName(banner_id)}\` (${banner_id}/${bannerCount})`)
 		.setDescription(`__Code de la bannière :__ \`${getBannerCode(banner_id)}\``)
 		.addFields({ name: 'Prix des invocations :', value: prices }, characters)
