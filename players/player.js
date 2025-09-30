@@ -1,5 +1,5 @@
 const { getRandomInt, isEmpty } = require('../config/utility.js');
-const { importStats } = require('../config/parser.js');
+const { importStats, saveStats } = require('../config/parser.js');
 
 class Player {
 	static PITY_5 = 50;
@@ -14,13 +14,14 @@ class Player {
 		// Daily
 		this.lastClaim = null;
 
-		// Currencies
-		this.coins = 0;
-		this.gems = 0;
-		this.tickets = 0;
-
 		// Rarity pity [5 stars, 4 stars]
 		this.pity = [0, 0];
+		// Currencies
+		this.bag = {
+			'coins': 0,
+			'gems': 0,
+			'tickets': 1,
+		};
 	}
 
 	// ///////////////
@@ -29,9 +30,13 @@ class Player {
 	//             //
 	// ///////////////
 
-	// TODO: Complete the functions
-
 	createUser() {
+		const data = importStats('template');
+		if (isEmpty(data)) {
+			console.log('Error: Stats imported are empty.');
+			return;
+		}
+		saveStats(data, this.discord_id);
 		console.log('Save file created successfully for user : ${this.discord_id}');
 	}
 
@@ -42,18 +47,24 @@ class Player {
 			console.log('Error: Stats imported are empty.');
 			return;
 		}
-
-		this.pity[0] = data.pity[0];
-		this.pity[1] = data.pity[1];
-
-		this.coins = data.bag.coins;
-		this.gems = data.bag.gems;
-		this.tickets = data.bag.tickets;
+		this.pity = data.pity;
+		this.bag = data.bag;
 
 		console.log('Save file imported successfully for user : ${this.discord_id}');
 	}
 
 	updateUser() {
+		const data = {
+			'pity': this.pity,
+			'bag': this.bag,
+			'board': [
+				[null, null, null],
+				[null, null, null],
+				[null, null, null],
+			],
+		};
+		saveStats(data, this.discord_id);
+
 		console.log('Save file updated successfully for user : ${this.discord_id}');
 	}
 
