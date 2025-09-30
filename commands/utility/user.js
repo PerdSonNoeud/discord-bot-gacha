@@ -98,7 +98,6 @@ module.exports = {
 			}
 
 			const pages = [];
-			const current = 0;
 
 			const player = getPlayer(user);
 			pages.push(firstPage(player, user, interaction.client));
@@ -108,7 +107,7 @@ module.exports = {
 			}
 
 			// TODO: Create the pages for the inventory once added.
-			pagination(interaction, pages, current);
+			pagination(interaction, pages);
 		}
 	},
 };
