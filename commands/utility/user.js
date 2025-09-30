@@ -91,7 +91,7 @@ module.exports = {
 			pages.push(firstPage(player, user, interaction.client));
 
 			for (let i = 0; i < pages.length; i++) {
-				pages[i].setThumbnail(interaction.guild.iconURL());
+				pages[i].setThumbnail(`${interaction.guild.iconURL()}?size=4096`);
 			}
 
 			// TODO: Create the pages for the inventory once added.
