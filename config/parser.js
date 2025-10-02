@@ -7,6 +7,10 @@ function fileExists(filepath) {
 	return fs.existsSync(filepath);
 }
 
+function playerExists(userID) {
+	return fileExists(`./assets/users/stats/${userID}.json`);
+}
+
 // Function that gets the file given in argument, returns {} if nothing is found.
 function parseFile(filepath) {
 	try {
@@ -24,21 +28,23 @@ function parseBanners(filepath) {
 	return parseFile(filepath);
 }
 
-// Function that import the stats of the user given in argument.
+// Function that imports the stats of the user given in argument.
 function importStats(userID) {
 	const filepath = `${stats}${userID}.json`;
 	return parseFile(filepath);
 }
 
-// Function that import the inventory of the user given in argument.
+// Function that imports the inventory of the user given in argument.
 function importInv(userID) {
 	const filepath = `${inv}${userID}.json`;
 	return parseFile(filepath);
 }
 
+// Function that saves the stats of the user given in argument.
 function saveStats(data, userID) {
+	console.log(data);
 	const jsonData = JSON.stringify(data, null, 2);
-	fs.writefile(`${stats}${userID}.json`, jsonData, (err) => {
+	fs.writeFile(`${stats}${userID}.json`, jsonData, (err) => {
 		if (err) {
 			console.error('Error while writing files: ', err);
 			return;
@@ -47,9 +53,10 @@ function saveStats(data, userID) {
 	});
 }
 
+// Function that saves the inventory of the user given in argument.
 function saveInv(data, userID) {
 	const jsonData = JSON.stringify(data, null, 2);
-	fs.writefile(`${inv}${userID}.json`, jsonData, (err) => {
+	fs.writeFile(`${inv}${userID}.json`, jsonData, (err) => {
 		if (err) {
 			console.error('Error while writing files: ', err);
 			return;
@@ -58,4 +65,4 @@ function saveInv(data, userID) {
 	});
 }
 
-module.exports = { fileExists, importInv, importStats, parseBanners, saveInv, saveStats };
+module.exports = { importInv, importStats, parseBanners, playerExists, saveInv, saveStats };

@@ -1,12 +1,9 @@
 const { MessageFlags, EmbedBuilder, SlashCommandBuilder } = require('discord.js');
 const { rarityToString } = require('../../characters/character.js');
 const { getPlayer, Player } = require('../../players/player.js');
-const { fileExists } = require('../../config/parser.js');
-const { pagination, setupEmbed } = require('../../config/utility.js');
+const { playerExists } = require('../../config/parser.js');
+const { getIcon, pagination, setupEmbed } = require('../../config/utility.js');
 
-function playerExists(userID) {
-	return fileExists(`./assets/users/stats/${userID}.json`);
-}
 
 function firstPage(player, user, client) {
 	// TODO: Import data from the inventory of the user
@@ -35,9 +32,9 @@ function firstPage(player, user, client) {
 	const uniqueText = '';
 
 	const bagText = (
-		`🪙 - **${player.bag.coins}** pièce${(player.bag.coins > 0) ? 's' : ''}
-    💎 - **${player.bag.gems}** gemme${(player.bag.gems > 0) ? 's' : ''}
-    🎟️ - **${player.bag.tickets}** ticket${(player.bag.tickets > 0) ? 's' : ''}`
+		`${getIcon('coins')} - **${player.bag.coins}** pièce${(player.bag.coins > 0) ? 's' : ''}
+    ${getIcon('gems')} - **${player.bag.gems}** gemme${(player.bag.gems > 0) ? 's' : ''}
+    ${getIcon('tickets')} - **${player.bag.tickets}** ticket${(player.bag.tickets > 0) ? 's' : ''}`
 	);
 
 	const embed = new EmbedBuilder()
@@ -75,7 +72,10 @@ module.exports = {
 			user = interaction.user;
 			if (playerExists(user.id)) {
 				console.log(`${user.displayName} already has an account.`);
-				await interaction.reply({ content: 'Tu as déjà un compte.', flags: MessageFlags.Ephemeral });
+				await interaction.reply({
+					content: 'Vous avez déjà un compte.',
+					flags: MessageFlags.Ephemeral,
+				});
 				return;
 			}
 			const player = Player(user);
@@ -91,9 +91,17 @@ module.exports = {
 			// Checks if the user we're searching for has an account
 			if (!playerExists(user.id)) {
 				console.log(`${user.displayName} has no account.`);
-				let content = 'Tu n\'as pas encore de compte';
-				if (interaction.options.getUser('target')) content = 'L\'utilisateur que vous cherchez n\'a pas encore de compte.';
-				await interaction.reply({ content: content, flags: MessageFlags.Ephemeral });
+				let content = 'Vous n\'avez pas encore de compte';
+				if (interaction.options.getUser('target')) {
+					content = (
+						'L\'utilisateur que vous cherchez ' +
+            'n\'a pas encore de compte.'
+					);
+				}
+				await interaction.reply({
+					content: content,
+					flags: MessageFlags.Ephemeral,
+				});
 				return;
 			}
 

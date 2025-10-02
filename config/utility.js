@@ -10,11 +10,32 @@ function getRandomInt(min, max) {
 	return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+// Function that returns the emoji linked to the name given in argument.
+function getIcon(name) {
+	switch (name) {
+	case 'coins':
+		return '🪙';
+	case 'gems':
+		return '💎';
+	case 'tickets':
+		return '🎟️';
+	default:
+		return '';
+	};
+
+}
+
 // Template of embed
 function setupEmbed(user, client, embed) {
 	embed.setColor(0xff0000)
-		.setAuthor({ name: user.displayName, iconURL: user.displayAvatarURL() })
-		.setFooter({ text: 'Gacha bot | 2025', iconURL: client.user.displayAvatarURL() });
+		.setAuthor({
+			name: user.displayName,
+			iconURL: user.displayAvatarURL(),
+		})
+		.setFooter({
+			text: 'Gacha bot | 2025',
+			iconURL: client.user.displayAvatarURL(),
+		});
 }
 
 // Function to setup pagination
@@ -43,11 +64,15 @@ async function pagination(interaction, pages, current = 0) {
 		components: [row],
 	});
 
-	const collector = message.createMessageComponentCollector({ time: 600000 });
+	const collector = message
+		.createMessageComponentCollector({ time: 600000 });
 
 	collector.on('collect', async i => {
 		if (i.user.id !== interaction.user.id) {
-			return i.reply({ content: 'These buttons aren\'t for you!', ephemeral: true });
+			return i.reply({
+				content: 'These buttons aren\'t for you!',
+				ephemeral: true,
+			});
 		}
 
 		if (i.customId === 'prev') {
@@ -85,10 +110,12 @@ async function pagination(interaction, pages, current = 0) {
 	collector.on('end', () => {
 		// Disable buttons after time runs out
 		const disabledRow = new ActionRowBuilder().addComponents(
-			row.components.map(button => ButtonBuilder.from(button).setDisabled(true)),
+			row.components.map(button => ButtonBuilder
+				.from(button)
+				.setDisabled(true)),
 		);
 		message.edit({ components: [disabledRow] });
 	});
 }
 
-module.exports = { getRandomInt, isEmpty, pagination, setupEmbed };
+module.exports = { getIcon, getRandomInt, isEmpty, pagination, setupEmbed };

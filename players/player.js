@@ -90,7 +90,10 @@ class Player {
 	// //////////////////
 
 	canClaimReward() {
-		if (!this.lastClaim) return true;
+		if (!this.lastClaim) {
+			this.lastClaim = Date.now();
+			return true;
+		}
 
 		const now = Date.now();
 		const hoursPassed = (now - this.lastClaim) / (1000 * 60 * 60);
@@ -99,18 +102,15 @@ class Player {
 	}
 
 	claimDailyReward() {
-		// If the daily reward was already claimed, return false
-		if (!this.canClaimReward()) {
-			console.log('${this.toString()} already claimed his daily reward.');
-			return false;
-		}
-
 		// Give daily reward
-		this.coins += getRandomInt(500, 1000);
-		this.gems += getRandomInt(50, 100);
-		this.tickets++;
+		this.bag.coins += getRandomInt(500, 1000);
+		this.bag.gems += getRandomInt(50, 100);
+		this.bag.tickets++;
 
-		return true;
+	  // Save timestamp of last claim
+		this.lastClaim = Date.now();
+
+		this.updateUser();
 	}
 
 	// //////////////////
