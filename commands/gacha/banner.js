@@ -1,9 +1,11 @@
 const { EmbedBuilder, SlashCommandBuilder } = require('discord.js');
 const { bannerCount, bannerExists, getBannerCode, getBannerImage,
 	getBannerName, listBannerCharacters } = require('../../banners/banner.js');
+const { parseBanners } = require('../../config/parser.js');
 const { getIcon, pagination, setupEmbed } = require('../../config/utility.js');
 
 function bannerEmbed(banner_id, user, client) {
+	const banners = parseBanners('./assets/portals/banners.json');
 	const prices = (
 		`\`- Invocation simple : 10 gemmes ${getIcon('gems')}\`\n` +
     `\`- Invocation multiple : 100 gemmes ${getIcon('gems')}/` +
@@ -13,16 +15,16 @@ function bannerEmbed(banner_id, user, client) {
 		name: 'Personnages disponibles :',
 		value: 'Aucun personnage disponible pour le moment.',
 	};
-	if (bannerExists(banner_id)) {
-		characters.value = listBannerCharacters(client, banner_id);
+	if (bannerExists(banners, banner_id)) {
+		characters.value = listBannerCharacters(client, banners, banner_id);
 	}
 	const embed = new EmbedBuilder()
 		.setTitle(
-			`Bannière \`${getBannerName(banner_id)}\` (${banner_id}/${bannerCount})`,
+			`Bannière \`${getBannerName(banners, banner_id)}\` (${banner_id}/${bannerCount})`,
 		)
-		.setDescription(`__Code de la bannière :__ \`${getBannerCode(banner_id)}\``)
+		.setDescription(`__Code de la bannière :__ \`${getBannerCode(banners, banner_id)}\``)
 		.addFields({ name: 'Prix des invocations :', value: prices }, characters)
-		.setImage(getBannerImage(banner_id));
+		.setImage(getBannerImage(banners, banner_id));
 	setupEmbed(user, client, embed);
 
 	return embed;
