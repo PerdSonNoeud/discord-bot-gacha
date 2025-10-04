@@ -1,5 +1,6 @@
 const { getRandomInt, isEmpty } = require('../config/utility.js');
-const { importStats, saveStats } = require('../config/parser.js');
+const { importInv, importStats, saveInv,
+	saveStats } = require('../config/parser.js');
 
 
 function getPlayer(user) {
@@ -26,6 +27,9 @@ class Player {
 		this.discord_name = user.displayName;
 		this.discord_avatar = user.avatar;
 
+		// Inventory
+		this.inventory = {};
+
 		// Daily
 		this.lastClaim = null;
 
@@ -46,30 +50,46 @@ class Player {
 	// ///////////////
 
 	createUser() {
-		const data = importStats('template');
-		if (isEmpty(data)) {
+		// Import Stats
+		const data_stats = importStats('template');
+		if (isEmpty(data_stats)) {
 			console.log('Error: Stats imported are empty.');
 			return;
 		}
-		saveStats(data, this.discord_id);
+		saveStats(data_stats, this.discord_id);
+		// Import Inventory
+		const data_inv = importInv('template');
+		if (isEmpty(data_inv)) {
+			console.log('Error: Inventory imported is empty');
+		}
+		saveInv(data_inv, this.discord_id);
+
+		this.importUser();
 		console.log(`Save file created successfully for ${this}`);
 	}
 
 	importUser() {
-		const data = importStats(this.discord_id);
+		const data_stats = importStats(this.discord_id);
 		// Checks if the data were imported successfully
-		if (isEmpty(data)) {
+		if (isEmpty(data_stats)) {
 			console.log('Error: Stats imported are empty.');
 			return;
 		}
-		this.pity = data.pity;
-		this.bag = data.bag;
+		const data_inv = importInv(this.discord_id);
+		// Checks if the data were imported successfully
+		if (isEmpty(data_inv)) {
+			console.log('Error: Inventory imported is empty.');
+			return;
+		}
+		this.pity = data_stats.pity;
+		this.bag = data_stats.bag;
+		this.inventory = data_inv;
 
 		console.log(`Save file imported successfully for ${this}`);
 	}
 
 	updateUser() {
-		const data = {
+		const data_stats = {
 			'pity': this.pity,
 			'bag': this.bag,
 			'board': [
@@ -78,7 +98,8 @@ class Player {
 				[null, null, null],
 			],
 		};
-		saveStats(data, this.discord_id);
+		saveStats(data_stats, this.discord_id);
+		saveInv(this.inventory, this.discord_id);
 
 		console.log(`Save file saved successfully for ${this}`);
 	}

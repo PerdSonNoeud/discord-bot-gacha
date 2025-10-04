@@ -1,7 +1,7 @@
 const { parseBanners } = require('../config/parser.js');
 const { characterToString, getCharacterIcon } = require('../characters/character.js');
 
-const bannerCount = parseBanners('./assets/portals/banners.json').length;
+const bannerCount = parseBanners('./assets/banners/banners.json').length;
 
 function bannerExists(banners, banner_id) {
 	const banner = banners.find(b => b.id === banner_id);

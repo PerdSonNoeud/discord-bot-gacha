@@ -23,7 +23,7 @@ function parseFile(filepath) {
 	}
 }
 
-// Function that gets info from banners from "./assets/portals/banners.json"
+// Function that gets info from banners from "./assets/banners/banners.json"
 function parseBanners(filepath) {
 	return parseFile(filepath);
 }
