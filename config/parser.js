@@ -24,8 +24,19 @@ function parseFile(filepath) {
 }
 
 // Function that gets info from banners from "./assets/banners/banners.json"
-function parseBanners(filepath) {
+function parseBanners(filepath = './assets/banners/banners.json') {
 	return parseFile(filepath);
+}
+
+function parseCharacters() {
+	const banners = parseBanners();
+	let result = [];
+
+	for (let i = 0; i < banners.length; i++) {
+		result = [...result, ...banners[i].characters];
+	}
+
+	return result;
 }
 
 // Function that imports the stats of the user given in argument.
@@ -65,4 +76,4 @@ function saveInv(data, userID) {
 	});
 }
 
-module.exports = { importInv, importStats, parseBanners, playerExists, saveInv, saveStats };
+module.exports = { importInv, importStats, parseBanners, parseCharacters, playerExists, saveInv, saveStats };

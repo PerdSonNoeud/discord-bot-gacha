@@ -1,7 +1,7 @@
 const { MessageFlags, EmbedBuilder, SlashCommandBuilder } = require('discord.js');
 const { rarityToString } = require('../../characters/character.js');
 const { getPlayer, Player } = require('../../players/player.js');
-const { playerExists } = require('../../config/parser.js');
+const { parseCharacters, playerExists } = require('../../config/parser.js');
 const { getIcon, pagination, setupEmbed } = require('../../config/utility.js');
 
 
@@ -47,6 +47,36 @@ function firstPage(player, user, client) {
 		);
 	setupEmbed(user, client, embed);
 	return embed;
+}
+
+function invPages(player, user, client) {
+	const pages = [];
+	const count = Object.values(player.inventory).filter(v => v !== 0).length - 1;
+	let n_pages = Math.round(count / 10);
+	if (count % 10 != 0) {
+		n_pages += 1;
+	}
+
+	const characters = parseCharacters();
+	for (let i = 0; i < n_pages; i++) {
+		let text = '';
+		for (let j = (i * 10) + 1; j < (i * 10) + 11; j++) {
+			if (j > count) {break;}
+			const quantity = player.inventory[String(j)];
+			const character = characters[j - 1];
+			const name = character.name;
+			const rarity = rarityToString(character.rarity);
+			text += `${rarity}- \`[x${quantity}]\` ${name}\n`;
+		}
+		const embed = new EmbedBuilder()
+			.setTitle(`Personnages (${i + 1}/${n_pages})`)
+			.setDescription(text);
+
+		setupEmbed(user, client, embed);
+		pages.push(embed);
+	}
+
+	return pages;
 }
 
 module.exports = {
@@ -106,16 +136,18 @@ module.exports = {
 				return;
 			}
 
-			const pages = [];
+			let pages = [];
 
 			const player = getPlayer(user);
 			pages.push(firstPage(player, user, interaction.client));
+			const inv_pages = invPages(player, user, interaction.client);
+			pages = [...pages, ...inv_pages];
+			console.log(pages);
 
 			for (let i = 0; i < pages.length; i++) {
 				pages[i].setThumbnail(`${interaction.guild.iconURL()}?size=4096`);
 			}
 
-			// TODO: Create the pages for the inventory once added.
 			pagination(interaction, pages);
 		}
 	},
