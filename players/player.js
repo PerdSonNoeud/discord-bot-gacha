@@ -104,6 +104,40 @@ class Player {
 		console.log(`Save file saved successfully for ${this}`);
 	}
 
+	// ///////////////
+	//             //
+	//  Inventory  //
+	//             //
+	// ///////////////
+
+	getTotal() {
+		const result = [0, 0, 0, this.inventory['0']];
+		for (const c_id in this.inventory) {
+			const id = Math.floor(Number(c_id));
+			result[0] += this.inventory[c_id];
+			if ([1, 2, 3].includes(id % 10)) {
+				result[1] += this.inventory[c_id];
+			}
+		}
+		result[2] = result[0] - (result[1] + result[3]);
+		return result;
+	}
+
+	getUnique() {
+		// TODO: Do something for the 3 stars (items)
+		const result = [0, 0, 1];
+		for (const c_id in this.inventory) {
+			const id = Math.floor(Number(c_id));
+			if ([1, 2, 3].includes(id % 10)) {
+				result[0]++;
+			}
+			else if (![1, 2, 3].includes(id % 10)) {
+				result[1]++;
+			}
+		}
+		return result;
+	}
+
 	// //////////////////
 	//                //
 	//  Daily Reward  //

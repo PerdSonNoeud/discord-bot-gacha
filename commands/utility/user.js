@@ -6,30 +6,31 @@ const { getIcon, pagination, setupEmbed } = require('../../config/utility.js');
 
 
 function firstPage(player, user, client) {
-	// TODO: Import data from the inventory of the user
-	const total = 0;
-	const stars5 = 0;
-	const stars4 = 0;
-	const stars3 = total - (stars5 + stars4);
-	let prc5, prc4, prc3;
+	const total = player.getTotal();
+	const percents = ['0.00', '0.00', '0.00'];
+	const unique = player.getUnique();
 
-	if (total === 0) {
-		prc5 = prc4 = prc3 = 0;
+	if (total[0] != 0) {
+		percents[0] = String((total[1] / total[0] * 100).toFixed(2)).padStart(5, '0');
+		percents[1] = String((total[2] / total[0] * 100).toFixed(2)).padStart(5, '0');
+		percents[2] = String((total[3] / total[0] * 100).toFixed(2)).padStart(5, '0');
 	}
-	else {
-		prc5 = Math.round(stars5 / total * 100, 2);
-		prc4 = Math.round(stars4 / total * 100, 2);
-		prc3 = Math.round(stars3 / total * 100, 2);
-	}
+
+	let width = Math.max(...total.slice(1, 4).map(n => String(n).length));
 	const totalText = (
-		`Nombre d'invocations: **${total}**
-    ${rarityToString(5)}: **\`${stars5}\`** \`(${prc5}%)\`
-    ${rarityToString(4)}: **\`${stars4}\`** \`(${prc4}%)\`
-    ${rarityToString(3)}: **\`${stars3}\`** \`(${prc3}%)\``
+		`Nombre d'invocations: **${total[0]}**
+    ${rarityToString(5)}: **\`${String(total[1]).padStart(width, '0')}\`** \`(${percents[0]}%)\`
+    ${rarityToString(4)}: **\`${String(total[2]).padStart(width, '0')}\`** \`(${percents[1]}%)\`
+    ${rarityToString(3)}: **\`${String(total[3]).padStart(width, '0')}\`** \`(${percents[2]}%)\``
 	);
 
-	// TODO: Complete uniqueText
-	const uniqueText = '';
+	width = Math.max(...unique.map(n => String(n).length));
+	const uniqueText = (`
+    ${rarityToString(5)}: **\`${String(unique[0]).padStart(width, '0')}\`**
+    ${rarityToString(4)}: **\`${String(unique[1]).padStart(width, '0')}\`**
+    ${rarityToString(3)}: **\`${String(unique[2]).padStart(width, '0')}\`**
+    (Objets non implémentés)`
+	);
 
 	const bagText = (
 		`${getIcon('coins')} - **${player.bag.coins}** pièce${(player.bag.coins > 0) ? 's' : ''}
