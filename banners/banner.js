@@ -1,7 +1,7 @@
 const { parseBanners } = require('../config/parser.js');
 const { characterToString, getCharacterIcon } = require('../characters/character.js');
 
-const bannerCount = parseBanners('./assets/banners/banners.json').length;
+const bannerCount = parseBanners().length;
 
 function bannerExists(banners, banner_id) {
 	const banner = banners.find(b => b.id === banner_id);
@@ -12,14 +12,14 @@ function bannerExists(banners, banner_id) {
 function getBannerName(banners, banner_id) {
 	const banner = banners.find(b => b.id === banner_id);
 	if (banner) return banner.name;
-	console.log(`Banner with id: ${banner_id} is not found.`);
+	console.error(`Banner with id: ${banner_id} is not found.`);
 	return '';
 }
 
 function getBannerCode(banners, banner_id) {
 	const banner = banners.find(b => b.id === banner_id);
 	if (banner) return banner.code;
-	console.log(`Banner with id: ${banner_id} is not found.`);
+	console.error(`Banner with id: ${banner_id} is not found.`);
 	return '';
 }
 
@@ -27,7 +27,7 @@ function getBannerCode(banners, banner_id) {
 function getBannerCharacters(banners, banner_id) {
 	const banner = banners.find(b => b.id === banner_id);
 	if (banner) return banner.characters;
-	console.log(`Banner with id: ${banner_id} is not found.`);
+	console.error(`Banner with id: ${banner_id} is not found.`);
 	return [];
 }
 

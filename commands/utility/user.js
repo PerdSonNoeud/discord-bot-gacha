@@ -102,7 +102,7 @@ module.exports = {
 		if (sub === 'create') {
 			user = interaction.user;
 			if (playerExists(user.id)) {
-				console.log(`${user.displayName} already has an account.`);
+				console.error(`${user.displayName} already has an account.`);
 				await interaction.reply({
 					content: 'Vous avez déjà un compte.',
 					flags: MessageFlags.Ephemeral,
@@ -121,7 +121,7 @@ module.exports = {
 
 			// Checks if the user we're searching for has an account
 			if (!playerExists(user.id)) {
-				console.log(`${user.displayName} has no account.`);
+				console.error(`${user.displayName} has no account.`);
 				let content = 'Vous n\'avez pas encore de compte';
 				if (interaction.options.getUser('target')) {
 					content = (
@@ -142,7 +142,6 @@ module.exports = {
 			pages.push(firstPage(player, user, interaction.client));
 			const inv_pages = invPages(player, user, interaction.client);
 			pages = [...pages, ...inv_pages];
-			console.log(pages);
 
 			for (let i = 0; i < pages.length; i++) {
 				pages[i].setThumbnail(`${interaction.guild.iconURL()}?size=4096`);

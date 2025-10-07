@@ -36,7 +36,7 @@ module.exports = {
 		const user = interaction.user;
 		// Check if the user has an account.
 		if (!playerExists(user.id)) {
-			console.log(`${user.displayName} has no account.`);
+			console.error(`${user.displayName} has no account.`);
 			const content = 'Vous n\'avez pas encore de compte';
 			await interaction.reply({
 				content: content,
@@ -48,7 +48,7 @@ module.exports = {
 		const player = getPlayer(interaction.user);
 		// Check if daily reward was already claimed.
 		if (!player.canClaimReward()) {
-			console.log(`${user.displayName} has already claimed the daily reward.`);
+			console.error(`${user.displayName} has already claimed the daily reward.`);
 			const content = 'Récompense journalière déjà récupérée.';
 			await interaction.reply({
 				content: content,

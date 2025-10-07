@@ -53,7 +53,6 @@ function importInv(userID) {
 
 // Function that saves the stats of the user given in argument.
 function saveStats(data, userID) {
-	console.log(data);
 	const jsonData = JSON.stringify(data, null, 2);
 	fs.writeFile(`${stats}${userID}.json`, jsonData, (err) => {
 		if (err) {

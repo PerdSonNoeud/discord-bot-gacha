@@ -1,4 +1,4 @@
-const { getRandomInt, isEmpty } = require('../config/utility.js');
+const { getRandomInt, getWeightedChoice, isEmpty } = require('../config/utility.js');
 const { importInv, importStats, saveInv,
 	saveStats } = require('../config/parser.js');
 
@@ -53,32 +53,32 @@ class Player {
 		// Import Stats
 		const data_stats = importStats('template');
 		if (isEmpty(data_stats)) {
-			console.log('Error: Stats imported are empty.');
+			console.error('Error: Stats imported are empty.');
 			return;
 		}
 		saveStats(data_stats, this.discord_id);
 		// Import Inventory
 		const data_inv = importInv('template');
 		if (isEmpty(data_inv)) {
-			console.log('Error: Inventory imported is empty');
+			console.error('Error: Inventory imported is empty');
 		}
 		saveInv(data_inv, this.discord_id);
 
 		this.importUser();
-		console.log(`Save file created successfully for ${this}`);
+		console.error(`Save file created successfully for ${this}`);
 	}
 
 	importUser() {
 		const data_stats = importStats(this.discord_id);
 		// Checks if the data were imported successfully
 		if (isEmpty(data_stats)) {
-			console.log('Error: Stats imported are empty.');
+			console.error('Error: Stats imported are empty.');
 			return;
 		}
 		const data_inv = importInv(this.discord_id);
 		// Checks if the data were imported successfully
 		if (isEmpty(data_inv)) {
-			console.log('Error: Inventory imported is empty.');
+			console.error('Error: Inventory imported is empty.');
 			return;
 		}
 		this.pity = data_stats.pity;
@@ -185,6 +185,7 @@ class Player {
 			this.pity[1] = 0;
 			return 4;
 		}
+		return getWeightedChoice({ 3: 70, 4: 25, 5: 5 });
 	}
 
 	// ///////////////

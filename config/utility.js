@@ -10,6 +10,23 @@ function getRandomInt(min, max) {
 	return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+function getRandomChoice(arr) {
+	return arr[getRandomInt(0, arr.length - 1)];
+}
+
+function getWeightedChoice(choices) {
+	// options = { value: weight, value: weight... }
+	const entries = Object.entries(choices);
+	const totalWeight = entries.reduce((sum, [, weight]) => sum + weight, 0);
+
+	let random = Math.random() * totalWeight;
+
+	for (const [value, weight] of entries) {
+		if (random < weight) return parseInt(value);
+		random -= weight;
+	}
+}
+
 // Function that returns the emoji linked to the name given in argument.
 function getIcon(name) {
 	switch (name) {
@@ -65,7 +82,7 @@ async function pagination(interaction, pages, current = 0) {
 	});
 
 	const collector = message
-		.createMessageComponentCollector({ time: 600000 });
+		.createMessageComponentCollector({ time: 0 });
 
 	collector.on('collect', async i => {
 		if (i.user.id !== interaction.user.id) {
@@ -118,4 +135,7 @@ async function pagination(interaction, pages, current = 0) {
 	});
 }
 
-module.exports = { getIcon, getRandomInt, isEmpty, pagination, setupEmbed };
+module.exports = {
+	getIcon, getRandomChoice, getRandomInt, getWeightedChoice,
+	isEmpty, pagination, setupEmbed,
+};
