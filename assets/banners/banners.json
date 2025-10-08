@@ -9,61 +9,71 @@
         "id": 1,
         "name": "Axel Blaze",
         "rarity": 5,
-        "desc": "Julia... Tu veux bien pardonner à ton grand frère de jouer ? Juste une fois..."
+        "desc": "Julia... Tu veux bien pardonner à ton grand frère de jouer ? Juste une fois...",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222981727027331183/id-01.png?ex=6618317d&is=6605bc7d&hm=4b8c2a5d3091ccda8b122b2dfe79e2b0f43b2f666937a98f9aff5fb187dc58ff&"
       },
       {
         "id": 2,
         "name": "Shawn Frost",
         "rarity": 5,
-        "desc": "Entend ma rage... Blizzard Eternel !"
+        "desc": "Entend ma rage... Blizzard Eternel !",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222981727530778644/id-02.png?ex=6618317d&is=6605bc7d&hm=284d9a9b768adc9d66033f868f898814564a9ecf8a11f25799d513aaa3cfbf40&"
       },
       {
         "id": 3,
         "name": "Mark Evans",
         "rarity": 5,
-        "desc": "Hey ! Jouons au Football !"
+        "desc": "Hey ! Jouons au Football !",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222981727937630268/id-03.png?ex=6618317d&is=6605bc7d&hm=0227ea0e52831c628f333dabb012b7ac304184d564383da29b727be0276f5292&"
       },
       {
         "id": 4,
         "name": "Nathan Swift",
         "rarity": 4,
-        "desc": ""
+        "desc": "",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222981728310788249/id-04.png?ex=6618317d&is=6605bc7d&hm=885db540ceed2bd481d785844e5ce86fc7124a6c23eaf49cff01c39f39e147b0&"
       },
       {
         "id": 5,
         "name": "Jude Sharp",
         "rarity": 4,
-        "desc": ""
+        "desc": "",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222981728730349648/id-05.png?ex=6618317e&is=6605bc7e&hm=ee6bd911dd66a355a73fab0d08cfa265700d49e6437664634267742854014c49&"
       },
       {
         "id": 6,
         "name": "Kevin Dragonfly",
         "rarity": 4,
-        "desc": ""
+        "desc": "",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222981729145589770/id-06.png?ex=6618317e&is=6605bc7e&hm=3341f6bad6e86e8ef0e108041f0567cd526a81784c0719860a6cf8cbc8d8d2fb&"
       },
       {
         "id": 7,
         "name": "Eric Eagle",
         "rarity": 4,
-        "desc": ""
+        "desc": "",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222981729552302224/id-07.png?ex=6618317e&is=6605bc7e&hm=0e5c7ab4cc8669505c0264a5638e93244ee1a640002bc7e63c2bc5cb55765470&"
       },
       {
         "id": 8,
         "name": "Nelly Raimon",
         "rarity": 4,
-        "desc": ""
+        "desc": "",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222981729959280710/id-08.png?ex=6618317e&is=6605bc7e&hm=21e953015f107b808a95afeae23c18e5200d99ca0f1253e9109f08965da50e65&"
       },
       {
         "id": 9,
         "name": "Darren Lachance",
         "rarity": 4,
-        "desc": ""
+        "desc": "",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222981730395361433/id-09.png?ex=6618317e&is=6605bc7e&hm=b9dd532aa97f57f6da9efcb693277c87a2aa81699fba1e6f79e9395eb483e3a1&"
       },
       {
         "id": 10,
         "name": "Jack Wallside",
         "rarity": 4,
-        "desc": ""
+        "desc": "",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222981730785427516/id-10.png?ex=6618317e&is=6605bc7e&hm=6a99ec4a8b7831038550d35ae7a78a781fa59f507549ae352a3014b9804d3181&"
       }
     ]
   },
@@ -77,61 +87,71 @@
         "id": 11,
         "name": "Izuku Midoriya",
         "rarity": 5,
-        "desc": "Je deviendrai le héro qui sauve tout le monde !"
+        "desc": "Je deviendrai le héro qui sauve tout le monde !",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222983264499662959/id-11.png?ex=661832ec&is=6605bdec&hm=af874bd6dbc8505bd309b28bc86433f7ecf624d98d5a35f83638c6d92878663e&"
       },
       {
         "id": 12,
         "name": "Katsuki Bakugo",
         "rarity": 5,
-        "desc": "Je serai pas juste le numéro un... J'aurai la première place, loin devant les autres !"
+        "desc": "Je serai pas juste le numéro un... J'aurai la première place, loin devant les autres !",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222983264931942592/id-12.png?ex=661832ec&is=6605bdec&hm=c50359dcfc67d848e1cb953035b557ee4aec8acabe30db013ad4ddc0e98516bc&"
       },
       {
         "id": 13,
         "name": "Shoto Todoroki",
         "rarity": 5,
-        "desc": "J'espère que mon stupide vieux regarde !"
+        "desc": "J'espère que mon stupide vieux regarde !",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222983265401438258/id-13.png?ex=661832ec&is=6605bdec&hm=4a1609b71db3b8f03cfe4ab43efee01c7c586303c60aaf6b8806af31b3a9170b&"
       },
       {
         "id": 14,
         "name": "Eijiro Kirishima",
         "rarity": 4,
-        "desc": ""
+        "desc": "",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222983265791643678/id-14.png?ex=661832ec&is=6605bdec&hm=9c64241c6e2b7ccb7df6405df9b1f03bab6a3c04085d1a662dac456893eb27b5&"
       },
       {
         "id": 15,
         "name": "Fumikage Tokoyami",
         "rarity": 4,
-        "desc": ""
+        "desc": "",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222983266374783158/id-15.png?ex=661832ec&is=6605bdec&hm=e72ad15e7c90d77aa402bc48c3d0c77043987634b3846cf92a26b405843db436&"
       },
       {
         "id": 16,
         "name": "Tsuyu Asui",
         "rarity": 4,
-        "desc": ""
+        "desc": "",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222983266768916590/id-16.png?ex=661832ec&is=6605bdec&hm=afa999c85b15d1ac09318cc996fcc9e920fe2144cf36148228fea163c6a97f07&"
       },
       {
         "id": 17,
         "name": "Ochaco Uraraka",
         "rarity": 4,
-        "desc": ""
+        "desc": "",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222983267402387476/id-17.png?ex=661832ec&is=6605bdec&hm=7be412938d812f07babddcfb8e3f78d347718dd1dedeb139620726d3c306ec37&"
       },
       {
         "id": 18,
         "name": "Tenya Ida",
         "rarity": 4,
-        "desc": ""
+        "desc": "",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222983268232593439/id-18.png?ex=661832ed&is=6605bded&hm=c06fbad2645b6ab38ca752409328203fff4b4cd11cd6de55c98ad7c151ec9ca5&"
       },
       {
         "id": 19,
         "name": "Denki Kaminari",
         "rarity": 4,
-        "desc": ""
+        "desc": "",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222983268920594473/id-19.png?ex=661832ed&is=6605bded&hm=12096239bb4979001c01985506f4e392a4f5dbadf97a00a1d2c2a40ab6dc4075&"
       },
       {
         "id": 20,
         "name": "Kyoka Jiro",
         "rarity": 4,
-        "desc": ""
+        "desc": "",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222983269373710428/id-20.png?ex=661832ed&is=6605bded&hm=cecdff4078a0fda0885180a2281023c6261eda704f34067d668354a1725bb45a&"
       }
     ]
   },
@@ -145,61 +165,71 @@
         "id": 21,
         "name": "Ainz Ooal Gown",
         "rarity": 5,
-        "desc": "Dans le passé, il n'y avait personne qui ne connaissait pas ce nom."
+        "desc": "Dans le passé, il n'y avait personne qui ne connaissait pas ce nom.",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222990298662305932/id-21.png?ex=66183979&is=6605c479&hm=e69c2239ba43b943311da8b3876d2ae60feb72670d8a7fbc52826ea8341eee9b&"
       },
       {
         "id": 22,
         "name": "Albedo",
         "rarity": 5,
-        "desc": "Nous vous offrons notre entière fidélité."
+        "desc": "Nous vous offrons notre entière fidélité.",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222990299153043506/id-22.png?ex=66183979&is=6605c479&hm=774247f2f42ad1fbd842b7082563174adc0e7eabd5b527c5c391bbb0ee7f2707&"
       },
       {
         "id": 23,
         "name": "Gargantua",
         "rarity": 5,
-        "desc": "Qu'est ce que c'est ? Quelle est cette chose ?"
+        "desc": "Qu'est ce que c'est ? Quelle est cette chose ?",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222990299563950230/id-23.png?ex=66183979&is=6605c479&hm=7afad7191469771343c5b7a9af7dcb428904c3b38748ac646b19f79894bc664d&"
       },
       {
         "id": 24,
         "name": "Shaltear Bloodfallen",
         "rarity": 4,
-        "desc": ""
+        "desc": "",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222990300189032590/id-24.png?ex=66183979&is=6605c479&hm=785ab78852c38ed699b44dd1b54e14ee6f0313fff0d642fdafaf5a53d311a04e&"
       },
       {
         "id": 25,
         "name": "Demiurge",
         "rarity": 4,
-        "desc": ""
+        "desc": "",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222990300826570752/id-25.png?ex=66183979&is=6605c479&hm=5ad91beb38d67ce777ac164d70893f9cfa6411d8164dcd1c415193070e4a023a&"
       },
       {
         "id": 26,
         "name": "Sebas Tian",
         "rarity": 4,
-        "desc": ""
+        "desc": "",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222990301312974959/id-26.png?ex=66183979&is=6605c479&hm=a6d634158b368fb19303d8434558b88d7f7bc0354355316ec3f2e6eeafee2e7e&"
       },
       {
         "id": 27,
         "name": "Cocytus",
         "rarity": 4,
-        "desc": ""
+        "desc": "",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222990301866754238/id-27.png?ex=6618397a&is=6605c47a&hm=7d0d9b2b79b0136a5c6557cb597c386853c3c95d5383a3c12b8a72a137f9948d&"
       },
       {
         "id": 28,
         "name": "Narberal Gamma",
         "rarity": 4,
-        "desc": ""
+        "desc": "",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222990302340714555/id-28.png?ex=6618397a&is=6605c47a&hm=f5fd2d4020acd3ccc6be068de1f68cbf3ee672bb2d1ad928f9613d916d788e08&"
       },
       {
         "id": 29,
         "name": "Entoma Vasilissa Zeta",
         "rarity": 4,
-        "desc": ""
+        "desc": "",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222990302835507320/id-29.png?ex=6618397a&is=6605c47a&hm=7f38e667474bbfa7ea5ad1bac66314fce737a04254c231fe60b267ecca620ac4&"
       },
       {
         "id": 30,
         "name": "Pandora's Actor",
         "rarity": 4,
-        "desc": ""
+        "desc": "",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222990303452201072/id-30.png?ex=6618397a&is=6605c47a&hm=9af1ca6fb0cccb2991a71c40b36c050e3d7bc047bd9995dad793fc362aa49c74&"
       }
     ]
   },
@@ -213,61 +243,71 @@
         "id": 31,
         "name": "Madoka Kaname",
         "rarity": 5,
-        "desc": "Je veux qu'ils sourient jusqu'au bout... Si une règle ou une loi s'y oppose. Je vais la détruire. Je vais la réécrire."
+        "desc": "Je veux qu'ils sourient jusqu'au bout... Si une règle ou une loi s'y oppose. Je vais la détruire. Je vais la réécrire.",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222991079247184003/id-31.png?ex=66183a33&is=6605c533&hm=9317690cab4096b3dfa6c791aae1f1a3171ef817621c217a928588136bbad1e8&"
       },
       {
         "id": 32,
         "name": "Walpurgisnacht",
         "rarity": 5,
-        "desc": "La Terre ne tourne plus une seule fois. L'histoire ne changera pas. Demain, et après-demain, c'est la nuit de Walpurgis."
+        "desc": "La Terre ne tourne plus une seule fois. L'histoire ne changera pas. Demain, et après-demain, c'est la nuit de Walpurgis.",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222991079692046346/id-32.png?ex=66183a33&is=6605c533&hm=c0b10209755eaf773c81fbebe558386403ed6587dc6c015ad251f7b0f3b644d8&"
       },
       {
         "id": 33,
         "name": "Homura Akemi",
         "rarity": 5,
-        "desc": "Plus je répète la boucle, plus nos univers s’éloignent. Mes mots ne t’atteignent même plus."
+        "desc": "Plus je répète la boucle, plus nos univers s’éloignent. Mes mots ne t’atteignent même plus.",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222991080224456785/id-33.png?ex=66183a33&is=6605c533&hm=98c1eebb488f18ae45ae5359ae9c51c39d1b3b89a10aee66800b1d58518441a4&"
       },
       {
         "id": 34,
         "name": "Mami Tomoe",
         "rarity": 4,
-        "desc": ""
+        "desc": "",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222991080853868687/id-34.png?ex=66183a33&is=6605c533&hm=8f874f4b7d88fe84e2b535752c6d30431a4b078a325bf738c3b873b1d73e772d&"
       },
       {
         "id": 35,
         "name": "Kyubey",
         "rarity": 4,
-        "desc": ""
+        "desc": "",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222991081306591305/id-35.png?ex=66183a33&is=6605c533&hm=daf8b1c4461c174dfed7415a5383b4ce2558ef917dd88d03095b0d09ccadb670&"
       },
       {
         "id": 36,
         "name": "Sayaka Miki",
         "rarity": 4,
-        "desc": ""
+        "desc": "",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222991081893789746/id-36.png?ex=66183a33&is=6605c533&hm=347f1803234daa50ad9534c7b33ac8d62d6c6e8ef378cfcbe1987bd36c076260&"
       },
       {
         "id": 37,
         "name": "Kyoko Sakura",
         "rarity": 4,
-        "desc": ""
+        "desc": "",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222991082598436936/id-37.png?ex=66183a34&is=6605c534&hm=7627997d9a30e86e9fbe390569836d5af7ba3c78ecc45bfff1bc0e08758d30d5&"
       },
       {
         "id": 38,
         "name": "Charlotte",
         "rarity": 4,
-        "desc": ""
+        "desc": "",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222991083156541541/id-38.png?ex=66183a34&is=6605c534&hm=7e9b1cebfca67329e7dcbe558d895da7874d74cddef25e7233daa645a25b9460&"
       },
       {
         "id": 39,
         "name": "Iroha Tamaki",
         "rarity": 4,
-        "desc": ""
+        "desc": "",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222991083630235818/id-39.png?ex=66183a34&is=6605c534&hm=a054eddb5e411033e24aea72d4c58e34c5055b992a888a706f4024872b796c4c&"
       },
       {
         "id": 40,
         "name": "Yachiyo Nanami",
         "rarity": 4,
-        "desc": ""
+        "desc": "",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222991084120965260/id-40.png?ex=66183a34&is=6605c534&hm=80e65d064e2a1bdb4a84de70d1af520a1a88592e1eb8859f8cee98a3a788d46c&"
       }
     ]
   },
@@ -281,61 +321,71 @@
         "id": 41,
         "name": "Endeavor",
         "rarity": 5,
-        "desc": "J'ai toujours détesté le crédo de cette école... PLUS ULTRA"
+        "desc": "J'ai toujours détesté le crédo de cette école... PLUS ULTRA",
+        "url": "https://cdn.discordapp.com/attachments/12229812068831764531222994281288040468/id-41.png?ex=66183d2e&is=6605c82e&hm=bf3743ddf561da59db26e32acccde2609a6230ba225ddd5fa9c22600339d8a18&/"
       },
       {
         "id": 42,
         "name": "Hawks",
         "rarity": 5,
-        "desc": "Je suis derrière vous, Numéro 1 !"
+        "desc": "Je suis derrière vous, Numéro 1 !",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222994281841557534/id-42.png?ex=66183d2e&is=6605c82e&hm=18d093c4f9e872bb09c5a1d180a6f2d04d06fddc6ef7afd3c87b992fa0c2ccf9&"
       },
       {
         "id": 43,
         "name": "All Might",
         "rarity": 5,
-        "desc": "La cavalerie est là !"
+        "desc": "La cavalerie est là !",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222994282361782302/id-43.png?ex=66183d2f&is=6605c82f&hm=bf7f0b43f50dc0baadc78ccfa036c891c01919eff08c6f48e92ef67bd93c15c1&"
       },
       {
         "id": 44,
         "name": "Sir Nighteye",
         "rarity": 4,
-        "desc": ""
+        "desc": "",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222994282844131398/id-44.png?ex=66183d2f&is=6605c82f&hm=2da3bb9110c9caf5bd9b86bd67ccaaee41f399225d351066a22e898ae6f7b9dc&"
       },
       {
         "id": 45,
         "name": "Fat Gum",
         "rarity": 4,
-        "desc": ""
+        "desc": "",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222994283263426631/id-45.png?ex=66183d2f&is=6605c82f&hm=0f4e88782fd02d50af80f135c3f7d9ae67e7791d0de77124d0542f4817d82727&"
       },
       {
         "id": 46,
         "name": "Present Mic",
         "rarity": 4,
-        "desc": ""
+        "desc": "",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222994283758485668/id-46.png?ex=66183d2f&is=6605c82f&hm=f0a63d653231fc4a6da71cc3cc4ae03ef6e45509872cceaa38b497be10bdb3c1&"
       },
       {
         "id": 47,
         "name": "Eraser Head",
         "rarity": 4,
-        "desc": ""
+        "desc": "",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222994284278583419/id-47.png?ex=66183d2f&is=6605c82f&hm=ab30fdea46196dc442ef37be28c7ccd9a53404be5233eea77d6cf73e59bb7777&"
       },
       {
         "id": 48,
         "name": "Mount Lady",
         "rarity": 4,
-        "desc": ""
+        "desc": "",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222994284668518440/id-48.png?ex=66183d2f&is=6605c82f&hm=b788e245737320589133b1b18f82893224153d53b5ee8b17073a787776cef33e&"
       },
       {
         "id": 49,
         "name": "Gran Torino",
         "rarity": 4,
-        "desc": ""
+        "desc": "",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222994285608173639/id-49.png?ex=66183d2f&is=6605c82f&hm=f4ab11d6aa01388bfd082d851f6a488055dd5b8e53e7f9936891d61c897bb989&"
       },
       {
         "id": 50,
         "name": "Mirko",
         "rarity": 4,
-        "desc": ""
+        "desc": "",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222994286035996893/id-50.png?ex=66183d2f&is=6605c82f&hm=5761949eb4e4696dc90aae56c96a1d733584c0c79baefa491fca714712b96e17&"
       }
     ]
   },
@@ -349,61 +399,71 @@
         "id": 51,
         "name": "All For One",
         "rarity": 5,
-        "desc": "Profites-en tant que tu le peux All Might... de cette paix éphémère..."
+        "desc": "Profites-en tant que tu le peux All Might... de cette paix éphémère...",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222997657388191805/id-51.png?ex=66184053&is=6605cb53&hm=63c2784887138976b88dd5e0930ed111fc0694e1a3e2a41beeaa0bb82da63496&"
       },
       {
         "id": 52,
         "name": "Dabi",
         "rarity": 5,
-        "desc": "Le passé ne meurt jamais !"
+        "desc": "Le passé ne meurt jamais !",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222997657946165359/id-52.png?ex=66184053&is=6605cb53&hm=d824ee6a353c0cf7b3ca8acfebf1962a44eb7cd4ab031b51015c8d88e9c6d336&"
       },
       {
         "id": 53,
         "name": "Tomura Shigaraki",
         "rarity": 5,
-        "desc": "Je détruirais tout... moi y compris."
+        "desc": "Je détruirais tout... moi y compris.",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222997659044941957/id-53.png?ex=66184054&is=6605cb54&hm=1dfa3b731108c744c703a786e0a6bae9865fe0a179927f00c4a690d1c31f5745&"
       },
       {
         "id": 54,
         "name": "Himiko Toga",
         "rarity": 4,
-        "desc": ""
+        "desc": "",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222997659535540384/id-54.png?ex=66184054&is=6605cb54&hm=ee7aaac1995aeb4fa7225776a82801effc0e7f3d9cb760fb0ea5db1ff60c4086&"
       },
       {
         "id": 55,
         "name": "Redestro",
         "rarity": 4,
-        "desc": ""
+        "desc": "",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222997660034666619/id-55.png?ex=66184054&is=6605cb54&hm=75c6181fc561af5b684489c57cfc08ce9f63fe38775fc02bd7b7a08cc40c0e11&"
       },
       {
         "id": 56,
         "name": "Kai Chisaki",
         "rarity": 4,
-        "desc": ""
+        "desc": "",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222997664266981470/id-56.png?ex=66184055&is=6605cb55&hm=687f5f24f47fe2e8a984dd0d1435ee2c419ca83f79c4541cff4649042218e8c9&"
       },
       {
         "id": 57,
         "name": "Muscular",
         "rarity": 4,
-        "desc": ""
+        "desc": "",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222997665055248434/id-57.png?ex=66184055&is=6605cb55&hm=d03a3c92a939e8af05ac8c428ac3aff16eb2ab9dbeff8d25d6c0fabdf4fb459c&"
       },
       {
         "id": 58,
         "name": "Stain",
         "rarity": 4,
-        "desc": ""
+        "desc": "",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222997666074464296/id-58.png?ex=66184055&is=6605cb55&hm=412f6ab8ad40613329a6c921f47b2c7b3b5f867d7f6eea39cec6bd4fde9b4aaa&"
       },
       {
         "id": 59,
         "name": "Gentle Criminal",
         "rarity": 4,
-        "desc": ""
+        "desc": "",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222997666758266990/id-59.png?ex=66184055&is=6605cb55&hm=d096ba9684409ea59200f34a9a75eef8acb99c0d1ad0a29f7c42ae4518af5ea8&"
       },
       {
         "id": 60,
         "name": "Twice",
         "rarity": 4,
-        "desc": ""
+        "desc": "",
+        "url": "https://cdn.discordapp.com/attachments/1222981206883176453/1222997667420835923/id-60.png?ex=66184056&is=6605cb56&hm=30f2690209fe327687a33dc8a0245d4e92aaae43104616787c15db6bdcb5bd73&"
       }
     ]
   },

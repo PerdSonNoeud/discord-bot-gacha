@@ -10,7 +10,13 @@ function oneSummon(player, banner) {
 	// 3 stars rarity so it is an item
 	if (randomRarity === 3) {
 		// TODO: Need to add different items later
-		return { id: 0, name: 'item', rarity: 3, desc: '' };
+		return {
+			id: 0,
+			name: 'item',
+			rarity: 3,
+			desc: '',
+			url: 'https://cdn.discordapp.com/attachments/1222981206883176453/1222981291436150874/id-00.png?ex=66183115&is=6605bc15&hm=4ec97e8dfaeccd69a64eabc6f7b69ad4afa339b8e534f453e2c6049cd0a318d6&',
+		};
 	}
 	const possible = banner.characters.filter(c => c.rarity === randomRarity);
 	return getRandomChoice(possible);
@@ -34,7 +40,8 @@ function oneToEmbed(player, banner, character, user, client) {
 	const emb = new EmbedBuilder()
 		.setTitle(`Invocation sur \`${banner.name}\` :`)
 		.setDescription(characterToString(character.name, character.rarity))
-		.setThumbnail(banner.url);
+		.setThumbnail(banner.url)
+		.setImage(character.url);
 	setupEmbed(user, client, emb);
 
 	return emb;
