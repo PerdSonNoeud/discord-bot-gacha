@@ -24,7 +24,8 @@ This is an open-source, discord bot built using [discord.js](https://discord.js.
 
 ### Download Node.js and npm
 
-To download Node.js, follow the download instructions on the [Node.js](https://nodejs.org/en/download) official website.
+To download Node.js, follow the download instructions on the
+[Node.js](https://nodejs.org/en/download) official website.
 
 ### Setup the project
 
@@ -40,6 +41,16 @@ Then go in the git repository and initialize npm (where `package.json` is locate
 cd discord-bot-gacha
 npm install
 ```
+
+Now you need to create a .env file and add this to it :
+
+```.env
+TOKEN="Your token"
+CLIENT_ID="The application ID"
+```
+
+You can get the application ID on the [Discord Dev. Portal](https://discord.com/developers/applications)
+in the "General Information" section.
 
 ## Execute program
 
