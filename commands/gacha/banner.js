@@ -9,7 +9,7 @@ function bannerEmbed(banner_id, user, client) {
 	const prices = (
 		`\`- Invocation simple : 10 gemmes ${getIcon('gems')}\`\n` +
     `\`- Invocation multiple : 100 gemmes ${getIcon('gems')}/` +
-    `${getIcon('gems')} 1 ticket\``
+    `${getIcon('tickets')} 1 ticket\``
 	);
 	const characters = {
 		name: 'Personnages disponibles :',
