@@ -12,7 +12,7 @@ function oneSummon(player, banner) {
 		// TODO: Need to add different items later
 		return {
 			id: 0,
-			name: 'item',
+			name: 'Item',
 			rarity: 3,
 			desc: '',
 			url: 'https://cdn.discordapp.com/attachments/1222981206883176453/1222981291436150874/id-00.png?ex=66183115&is=6605bc15&hm=4ec97e8dfaeccd69a64eabc6f7b69ad4afa339b8e534f453e2c6049cd0a318d6&',
@@ -49,10 +49,32 @@ function oneToEmbed(player, banner, character, user, client) {
 
 function tenToEmbed(player, banner, summon, user, client) {
 	const pages = [];
+
+	const title = `Invocation sur \`${banner.name}\` :`;
+	let desc = '';
+
+	// TODO: Add a gif to represent the max rarity
+	const preview = new EmbedBuilder()
+		.setTitle(title)
+		.setThumbnail(banner.url);
+	setupEmbed(user, client, preview);
+	pages.push(preview);
+
 	const characters = summon.characters;
 	for (let i = 0; i < characters.length; i++) {
-		pages.push(oneToEmbed(player, banner, characters[i], user, client));
+		desc += `${characterToString(characters[i].name, characters[i].rarity)}\n`;
+		const embed = oneToEmbed(player, banner, characters[i], user, client);
+		embed.setTitle(`Invocation sur \`${banner.name}\` (${i + 1}/10) :`);
+		pages.push(embed);
 	}
+
+	const result = new EmbedBuilder()
+		.setTitle(title)
+		.setDescription(desc)
+		.setThumbnail(banner.url);
+	setupEmbed(user, client, result);
+	pages.push(result);
+
 	return pages;
 }
 
