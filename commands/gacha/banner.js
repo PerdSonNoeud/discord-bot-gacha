@@ -6,6 +6,7 @@ const { getIcon, pagination, setupEmbed } = require('../../config/utility.js');
 
 function bannerEmbed(banner_id, user, client) {
 	const banners = parseBanners('./assets/banners/banners.json');
+	// TODO: Import prices from somewhere else
 	const prices = (
 		`\`- Invocation simple : 10 gemmes ${getIcon('gems')}\`\n` +
     `\`- Invocation multiple : 100 gemmes ${getIcon('gems')}/` +

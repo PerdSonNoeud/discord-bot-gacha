@@ -135,21 +135,25 @@ module.exports = {
 			return;
 		}
 
+		// TODO: Check if the user has enough currency to summon
 		const sub = interaction.options.getSubcommand();
 		if (sub === 'one') {
 			const character = oneSummon(player, banner);
 			await interaction.reply({
 				embeds: [oneToEmbed(player, banner, character, user, interaction.client)],
 			});
+			// TODO: Save summoned character
 			console.log(`${player} summoned one character.`);
 			return;
 		}
 		else {
 			const characters = tenSummon(player, banner);
+			// TODO: Modify the function so we can remove return button with a boolean
 			pagination(
 				interaction,
 				tenToEmbed(player, banner, characters, user, interaction.client),
 			);
+			// TODO: Save summoned characters
 			console.log(`${player} summoned ten characters.`);
 			return;
 		}
